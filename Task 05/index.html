@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 class="main-heading">Event Registration Form</h3>
+
+<div class="form-container">
+    <form class="grid-layout">
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="email@example.com" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group span-2">
+            <label>Choose your Program</label>
+            <div class="radio-row">
+                <label class="radio-item"><input type="radio" name="program"> BS Computer Science</label>
+                <label class="radio-item"><input type="radio" name="program"> BS Artificial Intelligence</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Semester</label>
+            <div class="radio-row">
+                <label class="radio-item"><input type="radio" name="sem"> 2nd</label>
+                <label class="radio-item"><input type="radio" name="sem"> 4th</label>
+                <label class="radio-item"><input type="radio" name="sem"> 6th</label>
+                <label class="radio-item"><input type="radio" name="sem"> 8th</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Session</label>
+            <div class="radio-row">
+                <label class="radio-item"><input type="radio" name="sess"> Morning</label>
+                <label class="radio-item"><input type="radio" name="sess"> Evening</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="talent">Talent / Performance</label>
+            <input type="text" id="talent" placeholder="Singing, Drama, etc.">
+        </div>
+        <div class="form-group">
+            <label for="document">Upload Script/Document</label>
+            <input id="document" type="file">
+        </div>
+
+        <div class="form-group span-2">
+            <label for="description">Performance Brief Description</label>
+            <input type="text" id="description" placeholder="Describe your idea briefly">
+        </div>
+
+        <div class="form-group span-2 payment-info">
+            <label>Payment Upload (Rs 2000/-)</label>
+            <p style="font-size: 13px; color: #555; margin-bottom: 10px;">
+                JazzCash/EasyPaisa: 0300-XXXXXXX | BOP: XXXX-XXXX-XXXX
+            </p>
+            <input id="payment" type="file" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+</div>
+</body>
+</html>
